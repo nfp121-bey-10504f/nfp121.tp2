@@ -1,8 +1,10 @@
 #BlueJ class context
-comment0.params=args
-comment0.target=void\ main(String[])
-comment0.text=\nle\ point\ d'entr\u00E9e\ de\ cette\ application,\ dont\ le\ commentaire\ est\ \u00E0\ncompl\u00E9ter\n\n@param\ args\n...\n\n
-comment1.params=f
-comment1.target=float\ fahrenheitEnCelsius(int)
-comment1.text=\nla\ m\u00E9thode\ \u00E0\ compl\u00E9ter.\n\n@param\ f\nla\ valeur\ en\ degr\u00E9\ Fahrenheit\n@return\ la\ conversion\ en\ degr\u00E9\ Celsius\n\n
-numComments=2
+comment0.target=FahrenheitCelsius
+comment0.text=\n\ D\u00EF\u00BF\u00BDcrivez\ votre\ classe\ FahrenheitCelsius\ ici.\n\n\ @author\ Maroun\ Melhem\n\ @version\ 10504F\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ Point\ d'entr\u00C3\u00A9e\ de\ "TempConverter"\ pour\ convertir\ de\ Fahrenheit\ \u00C3\u00A0\ Celsius.\n\ Accepte\ plusieurs\ valeurs\ Fahrenheit\ en\ arguments\ et\ affiche\ le\ r\u00C3\u00A9sultat\ en\ Celsius.\n\n\ @param\ args\ un\ tableau\ de\ cha\u00C3\u00AEnes\ de\ caract\u00C3\u00A8res\ avec\ les\ valeurs\ Fahrenheit.\n\ \ \ \ \ \ \ \ \ \ \ \ Convertit\ chaque\ valeur\ en\ Celsius.\n
+comment2.params=tempF
+comment2.target=float\ convertirFahrenheitEnCelsius(int)
+comment2.text=\n\ Convertit\ les\ degr\u00C3\u00A9s\ Fahrenheit\ en\ degr\u00C3\u00A9s\ Celsius.\n\n\ @param\ f\ la\ valeur\ en\ degr\u00C3\u00A9s\ Fahrenheit\ \u00C3\u00A0\ convertir\n\ @return\ le\ r\u00C3\u00A9sultat\ en\ degr\u00C3\u00A9s\ Celsius\n
+numComments=3

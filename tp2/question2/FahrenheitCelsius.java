@@ -1,38 +1,46 @@
 package question2;
 
-
 /**
- * DÈcrivez votre classe FahrenheitCelsius ici.
- * 
- * @author (votre nom) 
- * @version (un numÈro de version ou une date)
+ * Classe pour convertir des degr√©s Fahrenheit en degr√©s Celsius.
+ * G√®re les exceptions NumberFormatException pour les entr√©es non num√©riques.
+ *
+ * @author Maroun Melhem
+ * @version 10504F
  */
-public class FahrenheitCelsius{
+public class FahrenheitCelsius {
 
-     /** le point d'entrÈe de cette application, 
-      * dont le commentaire est ‡ complÈter
-      *
-      *  @param args ...
-      */
-     public static void main(String[] args){
-       try{
-       
-      
-       }catch(NumberFormatException nfe){
-           System.out.println("error : " + nfe.getMessage());  // en cas d'erreur 
-       }
-       
-     }
-     
-     /** 
-      * la mÈthode ‡ complÈter. 
-      *   @param f la valeur en degrÈ Fahrenheit
-      *   @return  la conversion en degrÈ Celsius
-      */
-     public static float fahrenheitEnCelsius( int f){
-       // ...
-       return 0.F;	// ‡ complÈter	en remplaÁant la valeur retournÈe par la fonction de conversion
-       // ...
-     }
+    /**
+     * Le point d'entr√©e de cette application. Convertit des degr√©s Fahrenheit
+     * donn√©s en argument de la ligne de commande en degr√©s Celsius.
+     * G√®re les NumberFormatExceptions pour les entr√©es non valides.
+     *
+     * @param args les arguments de la ligne de commande repr√©sentant des degr√©s Fahrenheit.
+     */
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("Veuillez fournir au moins une valeur Fahrenheit en argument.");
+            return; // Exit the method if no arguments are provided
+        }
+
+        for (String arg : args) {
+            try {
+                int fahrenheit = Integer.parseInt(arg);
+                float celsius = fahrenheitEnCelsius(fahrenheit);
+                System.out.println(fahrenheit + " deg F -> " + String.format("%.1f", celsius) + " deg C");
+            } catch (NumberFormatException nfe) {
+                System.out.println("error : " + nfe.getMessage());
+            }
+        }
+    }
+
+    /**
+     * Convertit les degr√©s Fahrenheit en degr√©s Celsius.
+     *
+     * @param f la valeur en degr√©s Fahrenheit √† convertir
+     * @return la conversion en degr√©s Celsius
+     */
+    public static float fahrenheitEnCelsius(int f) {
+        return ((float) 5 / 9) * (f - 32);
+    }
 
 }
