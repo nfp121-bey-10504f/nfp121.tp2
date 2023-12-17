@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=FahrenheitCelsius
-comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ FahrenheitCelsius\ ici.\r\n\ \r\n\ @author\ (votre\ nom)\ \r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment0.text=\n\ Classe\ pour\ convertir\ des\ degr\u00C3\u00A9s\ Fahrenheit\ en\ degr\u00C3\u00A9s\ Celsius.\n\ G\u00C3\u00A8re\ les\ exceptions\ NumberFormatException\ pour\ les\ entr\u00C3\u00A9es\ non\ num\u00C3\u00A9riques.\n\n\ @author\ Maroun\ Melhem\n\ @version\ 10504F\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment1.text=\ le\ point\ d'entr\u00E9e\ de\ cette\ application,\ \r\n\ dont\ le\ commentaire\ est\ \u00E0\ compl\u00E9ter\r\n\r\n\ \ @param\ args\ ...\r\n
+comment1.text=\n\ Le\ point\ d'entr\u00C3\u00A9e\ de\ cette\ application.\ Convertit\ des\ degr\u00C3\u00A9s\ Fahrenheit\n\ donn\u00C3\u00A9s\ en\ argument\ de\ la\ ligne\ de\ commande\ en\ degr\u00C3\u00A9s\ Celsius.\n\ G\u00C3\u00A8re\ les\ NumberFormatExceptions\ pour\ les\ entr\u00C3\u00A9es\ non\ valides.\n\n\ @param\ args\ les\ arguments\ de\ la\ ligne\ de\ commande\ repr\u00C3\u00A9sentant\ des\ degr\u00C3\u00A9s\ Fahrenheit.\n
 comment2.params=f
 comment2.target=float\ fahrenheitEnCelsius(int)
-comment2.text=\ \r\n\ la\ m\u00E9thode\ \u00E0\ compl\u00E9ter.\ \r\n\ \ \ @param\ f\ la\ valeur\ en\ degr\u00E9\ Fahrenheit\r\n\ \ \ @return\ \ la\ conversion\ en\ degr\u00E9\ Celsius\r\n
+comment2.text=\n\ Convertit\ les\ degr\u00C3\u00A9s\ Fahrenheit\ en\ degr\u00C3\u00A9s\ Celsius.\n\n\ @param\ f\ la\ valeur\ en\ degr\u00C3\u00A9s\ Fahrenheit\ \u00C3\u00A0\ convertir\n\ @return\ la\ conversion\ en\ degr\u00C3\u00A9s\ Celsius\n
 numComments=3

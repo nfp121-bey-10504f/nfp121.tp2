@@ -1,13 +1,19 @@
 #BlueJ class context
 comment0.target=FahrenheitCelsiusTest
-comment0.text=\r\n\ Classe-test\ FahrenheitCelsiusTest.\r\n\r\n\ @author\ \ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n\r\n\ Les\ classes-test\ sont\ document\u00E9es\ ici\ \:\r\n\ http\://junit.sourceforge.net/javadoc/junit/framework/TestCase.html\r\n\ et\ sont\ bas\u00E9es\ sur\ le\ document\ \u00A9\ 2002\ Robert\ A.\ Ballance\ intitul\u00E9\r\n\ \u00ABJUnit\:\ Unit\ Testing\ Framework\u00BB.\r\n\r\n\ Les\ objets\ Test\ (et\ TestSuite)\ sont\ associ\u00E9s\ aux\ classes\ \u00E0\ tester\r\n\ par\ la\ simple\ relation\ yyyTest\ (e.g.\ qu'un\ Test\ de\ la\ classe\ Name.java\r\n\ se\ nommera\ NameTest.java);\ les\ deux\ se\ retrouvent\ dans\ le\ m\u00EAme\ paquetage.\r\n\ Les\ "engagements"\ (anglais\ \:\ "fixture")\ forment\ un\ ensemble\ de\ conditions\r\n\ qui\ sont\ vraies\ pour\ chaque\ m\u00E9thode\ Test\ \u00E0\ ex\u00E9cuter.\ \ Il\ peut\ y\ avoir\r\n\ plus\ d'une\ m\u00E9thode\ Test\ dans\ une\ classe\ Test;\ leur\ ensemble\ forme\ un\r\n\ objet\ TestSuite.\r\n\ BlueJ\ d\u00E9couvrira\ automatiquement\ (par\ introspection)\ les\ m\u00E9thodes\r\n\ Test\ de\ votre\ classe\ Test\ et\ g\u00E9n\u00E9rera\ la\ TestSuite\ cons\u00E9quente.\r\n\ Chaque\ appel\ d'une\ m\u00E9thode\ Test\ sera\ pr\u00E9c\u00E9d\u00E9\ d'un\ appel\ de\ setUp(),\r\n\ qui\ r\u00E9alise\ les\ engagements,\ et\ suivi\ d'un\ appel\ \u00E0\ tearDown(),\ qui\ les\r\n\ d\u00E9truit.\r\n
+comment0.text=\n\ Classe-test\ FahrenheitCelsiusTest.\ Les\ tests\ unitaires\ de\ FahrenheitCelsius.\n\n\ @author\ Maroun\ Melhem\n\ @version\ 1.0\n\n\ Les\ classes-test\ sont\ document\u00C3\u00A9es\ ici\ \:\n\ http\://junit.sourceforge.net/javadoc/junit/framework/TestCase.html\n\ et\ sont\ bas\u00C3\u00A9es\ sur\ le\ document\ \u00C2\u00A9\ 2002\ Robert\ A.\ Ballance\ intitul\u00C3\u00A9\n\ "JUnit\:\ Unit\ Testing\ Framework".\n\n\ Les\ objets\ Test\ (et\ TestSuite)\ sont\ associ\u00C3\u00A9s\ aux\ classes\ \u00C3\u00A0\ tester\n\ par\ la\ simple\ relation\ yyyTest\ (e.g.\ qu'un\ Test\ de\ la\ classe\ Name.java\n\ se\ nommera\ NameTest.java);\ les\ deux\ se\ retrouvent\ dans\ le\ m\u00C3\u00AAme\ paquetage.\n\ Les\ "fixtures"\ forment\ un\ ensemble\ de\ conditions\ qui\ sont\ vraies\ pour\ chaque\n\ m\u00C3\u00A9thode\ Test\ \u00C3\u00A0\ ex\u00C3\u00A9cuter.\ Il\ peut\ y\ avoir\ plus\ d'une\ m\u00C3\u00A9thode\ Test\ dans\ une\ classe\n\ Test;\ leur\ ensemble\ forme\ un\ objet\ TestSuite.\n\ BlueJ\ d\u00C3\u00A9couvrira\ automatiquement\ (par\ introspection)\ les\ m\u00C3\u00A9thodes\n\ Test\ de\ votre\ classe\ Test\ et\ g\u00C3\u00A9n\u00C3\u00A9rera\ la\ TestSuite\ cons\u00C3\u00A9quente.\n\ Chaque\ appel\ d'une\ m\u00C3\u00A9thode\ Test\ sera\ pr\u00C3\u00A9c\u00C3\u00A9d\u00C3\u00A9\ d'un\ appel\ de\ setUp(),\n\ qui\ r\u00C3\u00A9alise\ les\ fixtures,\ et\ suivi\ d'un\ appel\ \u00C3\u00A0\ tearDown(),\ qui\ les\n\ d\u00C3\u00A9truit.\n
 comment1.params=
 comment1.target=FahrenheitCelsiusTest()
-comment1.text=\r\n\ Constructeur\ de\ la\ classe-test\ FahrenheitCelsiusTest\r\n
+comment1.text=\n\ Constructeur\ de\ la\ classe-test\ FahrenheitCelsiusTest\n
 comment2.params=
 comment2.target=void\ setUp()
-comment2.text=\r\n\ Met\ en\ place\ les\ engagements.\r\n\r\n\ M\u00E9thode\ appel\u00E9e\ avant\ chaque\ appel\ de\ m\u00E9thode\ de\ test.\r\n
+comment2.text=\n\ Met\ en\ place\ les\ fixtures.\n\n\ M\u00C3\u00A9thode\ appel\u00C3\u00A9e\ avant\ chaque\ appel\ de\ m\u00C3\u00A9thode\ de\ test.\n
 comment3.params=
 comment3.target=void\ tearDown()
-comment3.text=\r\n\ Supprime\ les\ engagements\r\n\r\n\ M\u00E9thode\ appel\u00E9e\ apr\u00E8s\ chaque\ appel\ de\ m\u00E9thode\ de\ test.\r\n
-numComments=4
+comment3.text=\n\ Supprime\ les\ fixtures\n\n\ M\u00C3\u00A9thode\ appel\u00C3\u00A9e\ apr\u00C3\u00A8s\ chaque\ appel\ de\ m\u00C3\u00A9thode\ de\ test.\n
+comment4.params=
+comment4.target=void\ testNumberFormatException()
+comment4.text=\n\ Teste\ le\ cas\ o\u00C3\u00B9\ une\ NumberFormatException\ doit\ \u00C3\u00AAtre\ lev\u00C3\u00A9e.\n
+comment5.params=
+comment5.target=void\ testFahrenheitEnCelsius()
+comment5.text=\n\ Teste\ la\ m\u00C3\u00A9thode\ fahrenheitEnCelsius\ pour\ s'assurer\ que\ la\ conversion\n\ est\ correctement\ effectu\u00C3\u00A9e\ avec\ des\ entr\u00C3\u00A9es\ valides.\n
+numComments=6
