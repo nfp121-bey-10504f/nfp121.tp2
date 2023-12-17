@@ -1,41 +1,44 @@
 package question1;
 
 /**
- * Décrivez votre classe FahrenheitCelsius ici.
- * 
- * @author (votre nom)
- * @version (un numéro de version ou une date)
+ * Dï¿½crivez votre classe FahrenheitCelsius ici.
+ *
+ * @author Maroun Melhem
+ * @version 10504F
  */
 public class FahrenheitCelsius {
 
 	/**
-	 * le point d'entrée de cette application, dont le commentaire est à
-	 * compléter
-	 * 
-	 * @param args
-	 *            ...
+	 * Point d'entrÃ©e de "TempConverter" pour convertir de Fahrenheit Ã  Celsius.
+	 * Accepte plusieurs valeurs Fahrenheit en arguments et affiche le rÃ©sultat en Celsius.
+	 *
+	 * @param args un tableau de chaÃ®nes de caractÃ¨res avec les valeurs Fahrenheit.
+	 *            Convertit chaque valeur en Celsius.
 	 */
 	public static void main(String[] args) {
-		// pour tous les paramètres de la ligne de commande
-		int fahrenheit = 0;
-		float celsius = 0;
-		System.out.println(fahrenheit + "\u00B0F -> " + celsius + "\u00B0C"); // ligne,
-																				// format
-																				// imposés
-																				
-	}
+        // ContrÃ´le de la prÃ©sence d'arguments de tempÃ©rature Fahrenheit
+        if (args.length > 0) {
+            for (String valeurFahrenheit : args) {
+                int tempFahrenheit = Integer.parseInt(valeurFahrenheit); // Conversion de la chaÃ®ne en entier
+                float tempCelsius = convertirFahrenheitEnCelsius(tempFahrenheit); // Conversion en Celsius
+                // Affichage du rÃ©sultat formatÃ©
+                System.out.println(tempFahrenheit + " deg F -> " + String.format("%.1f", tempCelsius) + " deg C");
+            }
+        } else {
+            System.out.println("Veuillez fournir au moins une valeur Fahrenheit en argument.");
+        }
+    }
 
 	/**
-	 * la méthode à compléter.
-	 * 
-	 * @param f
-	 *            la valeur en degré Fahrenheit
-	 * @return la conversion en degré Celsius
+	 * Convertit les degrÃ©s Fahrenheit en degrÃ©s Celsius.
+	 *
+	 * @param f la valeur en degrÃ©s Fahrenheit Ã  convertir
+	 * @return le rÃ©sultat en degrÃ©s Celsius
 	 */
-	public static float fahrenheitEnCelsius(int f) {
-
-		return 0.F; // à compléter en remplaçant ce return 0.F par la fonction
-					// de conversion
-	}
+	public static float convertirFahrenheitEnCelsius(int tempF) {
+        float celsiusBrut = ((float) 5 / 9) * (tempF - 32);
+        // Arrondissement Ã  un chiffre aprÃ¨s la virgule en utilisant des calculs mathÃ©matiques
+        return Math.round(celsiusBrut * 10) / 10.0f;
+    }
 
 }
